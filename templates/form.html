@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Форма договора</title>
+</head>
+<body>
+  <h2>Заполните данные для договора</h2>
+  <form method="POST" action="/generate">
+    <label>Номер договора: <input type="text" name="contract_number"></label><br><br>
+    <label>Дата договора: <input type="date" name="contract_date"></label><br><br>
+    <label>Дата начала услуг: <input type="date" name="start_date"></label><br><br>
+
+    <h3>Данные заказчика</h3>
+    <label>ФИО: <input type="text" name="customer_name"></label><br><br>
+    <label>ИНН: <input type="text" name="customer_inn"></label><br><br>
+    <label>ОГРНИП: <input type="text" name="customer_ogrnip"></label><br><br>
+    <label>Р/с: <input type="text" name="customer_rs"></label><br><br>
+    <label>Банк: <input type="text" name="customer_bank"></label><br><br>
+    <label>БИК: <input type="text" name="customer_bik"></label><br><br>
+    <label>Корсчёт: <input type="text" name="customer_kors"></label><br><br>
+    <label>ИНН банка: <input type="text" name="bank_inn"></label><br><br>
+    <label>КПП банка: <input type="text" name="bank_kpp"></label><br><br>
+
+    <button type="submit">Сформировать договор</button>
+  </form>
+</body>
+</html>
