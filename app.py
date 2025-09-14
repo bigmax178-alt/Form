@@ -35,7 +35,9 @@ def generate():
         "customer_bik": request.form["customer_bik"],
         "customer_kors": request.form["customer_kors"],
         "bank_inn": request.form["bank_inn"],
-        "bank_kpp": request.form["bank_kpp"]
+        "bank_kpp": request.form["bank_kpp"],
+        "customer_email": request.form["customer_email"],
+        "pay_date": request.form["pay_date"]
     }
 
     template = DocxTemplate("Договор-шаблон-v2.docx")
